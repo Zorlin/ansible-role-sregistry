@@ -10,7 +10,6 @@ Before this role runs, you need to make sure the following role dependencies are
 | ----------------------------- | ------------------------ |
 | EPEL repo (RedHat OSes only)  | `geerlingguy.repo-epel`  |
 | Git                           | `geerlingguy.git`        |
-| Ansible                       | `geerlingguy.ansible`    |
 | Docker                        | `geerlingguy.docker`     |
 | Python Pip                    | `geerlingguy.pip`        |
 
@@ -42,7 +41,6 @@ None.
     - geerlingguy.repo-epel
     - geerlingguy.git
     - geerlingguy.pip
-    - geerlingguy.ansible
     - geerlingguy.docker
     - zorlin.sregistry
 ```
