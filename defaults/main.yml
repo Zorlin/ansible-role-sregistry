@@ -12,6 +12,12 @@ sregistry_enable_github_auth: true
 sregistry_enable_gitlab_auth: false
 sregistry_enable_bitbucket_auth: false
 
+# OAuth2 - Default app credentials for GitHub provider
+# You should NEVER use these in production, they are purely for testing
+# This uses a GitHub OAuth application controlled by https://github.com/Zorlin
+sregistry_oauth_github_key: '2c33f7262f2fdf3c8475'
+sregistry_oauth_github_secret: 'de1774b190377ad5543cb7db6d4363ba42637529'
+
 # Whether to enable Google Build
 sregistry_enable_google_build: false
 
