@@ -2,12 +2,17 @@
 # Default settings for Singularity Registry Server
 sregistry_secret_key: "2)ar8u3ttsq&g=zp2(z@-(+kw3pofd7lmz(wv95b0isyr#tlh3"
 
-# Enable or disable OAuth2 Providers
+# OAuth2 providers you want to make available
 sregistry_enable_google_auth: false
 sregistry_enable_twitter_auth: false
 sregistry_enable_github_auth: true
 sregistry_enable_gitlab_auth: false
 sregistry_enable_bitbucket_auth: false
 
-# Enable and disable Google Build
+# Whether to enable Google Build
 sregistry_enable_google_build: false
+
+# Plugins
+sregistry_plugins_ldap_auth: false
+sregistry_plugins_globus: false
+sregistry_plugins_saml: false
