@@ -53,4 +53,6 @@ MIT
 
 This role was created in 2020 by Benjamin Arntzen.
 
+This role uses examples and code from [geerlingguy.awx](https://github.com/geerlingguy/ansible-role-awx) which was written by Jeff Geerling and is available under the MIT license.
+
 This role uses examples and code from [grycap.singularity-registry](https://github.com/grycap/ansible-role-singularity-registry) which was written by Sergio López Huguet / Grid y Computación de Altas Prestaciones and is available under the Apache 2.0 License.
