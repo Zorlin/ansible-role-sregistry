@@ -2,6 +2,10 @@
 
 Installs and configures [Singularity Registry Server](https://github.com/singularityhub/sregistry).
 
+This role is in heavy development right now and not super ready for use.
+
+Right now it only supports the GitHub OAuth2 methods, the rest aren't implemented.
+
 ## Requirements
 
 Before this role runs, you need to make sure the following role dependencies are installed:
@@ -19,7 +23,7 @@ See this role's [`molecule/default/converge.yml`](molecule/default/converge.yml)
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    NOT YET IMPLEMENTED
+    NOT YET DOCUMENTED
 
 ## Dependencies
 
