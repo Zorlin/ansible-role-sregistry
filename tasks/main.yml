@@ -6,3 +6,8 @@
   package:
     name: nano
     state: present
+
+- name: Clone the Singularity Registry Server Git repo
+  git:
+    repo: https://github.com/singularityhub/sregistry
+    dest: /opt/sregistry/
