@@ -2,6 +2,9 @@
 # Default settings for Singularity Registry Server
 sregistry_secret_key: "2)ar8u3ttsq&g=zp2(z@-(+kw3pofd7lmz(wv95b0isyr#tlh3"
 
+# List of administrator users
+sregistry_admin_users: '(("zorlin", "zorlin@gmail.com"),)'
+
 # OAuth2 providers you want to make available
 sregistry_enable_google_auth: false
 sregistry_enable_twitter_auth: false
