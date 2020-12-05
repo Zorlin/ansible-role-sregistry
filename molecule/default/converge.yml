@@ -17,6 +17,5 @@
       when: ansible_os_family == 'RedHat'
     - geerlingguy.git
     - geerlingguy.pip
-    - geerlingguy.ansible
     - geerlingguy.docker
     - zorlin.sregistry
