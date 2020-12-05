@@ -12,3 +12,11 @@
     repo: https://github.com/singularityhub/sregistry
     dest: /opt/sregistry/
   when: not (sregistry_git_repo_state.stat.isdir is defined and sregistry_git_repo_state.stat.isdir)
+
+- name: Configure secrets
+  template:
+    src: secrets.py.j2
+    dest: /opt/sregistry/shub/settings/secrets.py
+    owner: root
+    group: root
+    mode: 0600
