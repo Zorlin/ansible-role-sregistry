@@ -28,7 +28,14 @@ Available variables are listed below, along with default values (see `defaults/m
 
 ## Dependencies
 
-None.
+You will need docker-compose and the "docker" python library installed on your control machine.
+
+An easy way to install them is using pip3:
+
+```
+pip3 install docker
+pip3 install docker-compose
+```
 
 ## Example Playbook
 
@@ -78,6 +85,7 @@ In no particular order:
 * Add configuration options for as much as reasonably possible
 * Nginx - setup the outage pages
 * Nginx - make outage pages use HTTPS if available
+* Add GitHub Actions + add docker-compose and "docker" pip module to host
 
 Actual playbooks are out of scope for now, but an "official" playbook repo should come later. So, TODOs for that:
 
