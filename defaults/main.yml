@@ -3,11 +3,11 @@
 sregistry_secret_key: "2)ar8u3ttsq&g=zp2(z@-(+kw3pofd7lmz(wv95b0isyr#tlh3"
 
 # Enable or disable OAuth2 Providers
-sregistry_enable_google_auth = false
-sregistry_enable_twitter_auth = false
-sregistry_enable_github_auth = true
-sregistry_enable_gitlab_auth = false
-sregistry_enable_bitbucket_auth = false
+sregistry_enable_google_auth: false
+sregistry_enable_twitter_auth: false
+sregistry_enable_github_auth: true
+sregistry_enable_gitlab_auth: false
+sregistry_enable_bitbucket_auth: false
 
 # Enable and disable Google Build
-sregistry_enable_google_build = false
+sregistry_enable_google_build: false
