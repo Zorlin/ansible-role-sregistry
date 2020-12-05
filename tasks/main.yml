@@ -2,12 +2,13 @@
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
 
-- name: Install dependencies.
-  package:
-    name: nano
-    state: present
+- name: Check if we have already cloned the Git repo
+  stat:
+    path: /opt/sregistry
+  register: sregistry_git_repo_state
 
-- name: Clone the Singularity Registry Server Git repo
+- name: Clone the Git repo
   git:
     repo: https://github.com/singularityhub/sregistry
     dest: /opt/sregistry/
+  when: not (sregistry_git_repo_state.stat.isdir is defined and sregistry_git_repo_state.stat.isdir)
