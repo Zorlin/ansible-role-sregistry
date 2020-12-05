@@ -16,6 +16,7 @@ Before this role runs, you need to make sure the following role dependencies are
 | Git                           | `geerlingguy.git`        |
 | Docker                        | `geerlingguy.docker`     |
 | Python Pip                    | `geerlingguy.pip`        |
+| Nginx                         | `geerlingguy.nginx`      |
 
 See this role's [`molecule/default/converge.yml`](molecule/default/converge.yml) playbook for an example that works across many different OSes.
 
@@ -46,6 +47,7 @@ None.
     - geerlingguy.git
     - geerlingguy.pip
     - geerlingguy.docker
+    - geerlingguy.nginx
     - zorlin.sregistry
 ```
 

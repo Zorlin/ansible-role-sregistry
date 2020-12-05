@@ -18,4 +18,5 @@
     - geerlingguy.git
     - geerlingguy.pip
     - geerlingguy.docker
+    - geerlingguy.nginx
     - zorlin.sregistry
