@@ -62,3 +62,25 @@ This role was created in 2020 by Benjamin Arntzen.
 This role uses examples and code from [geerlingguy.awx](https://github.com/geerlingguy/ansible-role-awx) which was written by Jeff Geerling and is available under the MIT license.
 
 This role uses examples and code from [grycap.singularity-registry](https://github.com/grycap/ansible-role-singularity-registry) which was written by Sergio López Huguet / Grid y Computación de Altas Prestaciones and is available under the Apache 2.0 License.
+
+## TODOs
+
+In no particular order:
+
+* Actually bring things up using https://docs.ansible.com/ansible/latest/collections/community/general/docker_service_module.html
+* Add options for providing your own SSL certs or using certbot/generation
+* Add options for providing your own database details
+* Add options for configuring domain stuff
+* Add options for setting Minio secrets
+* Add options for providing your own Minio service
+* Add optional install and configuration of "mc" tool
+* Properly add support for all available OAuth providers
+* Add configuration options for as much as reasonably possible
+* Nginx - setup the outage pages
+* Nginx - make outage pages use HTTPS if available
+
+Actual playbooks are out of scope for now, but an "official" playbook repo should come later. So, TODOs for that:
+
+* Playbook to take down the Docker images for maintenance and bring up nginx
+* Playbook to generate certificates with Let's Encrypt (certbot certonly w/ nginx plugin)
+* Playbook to renew LE certificates
