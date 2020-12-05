@@ -7,3 +7,12 @@
   gather_facts: false
 
   tasks:
+    - name: list python version
+      command: "python --version"
+      register: test_python_version
+      changed_when: false
+
+    - name: output requested information
+      debug:
+        msg:
+          - "python version is {{ test_python_version.stdout }}"
