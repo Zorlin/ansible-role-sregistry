@@ -1,0 +1,19 @@
+---
+- name: Converge (role only for rapid dev)
+  hosts: all
+  become: true
+
+  # Activate everything so we can see the effects
+  vars:
+    sregistry_enable_google_auth: true
+    sregistry_enable_twitter_auth: true
+    sregistry_enable_github_auth: true
+    sregistry_enable_gitlab_auth: true
+    sregistry_enable_bitbucket_auth: true
+    sregistry_enable_google_build: true
+    sregistry_plugins_ldap_auth: true
+    sregistry_plugins_globus: true
+    sregistry_plugins_saml: true
+
+  roles:
+    - zorlin.sregistry

@@ -1,0 +1,9 @@
+---
+# This playbook is used to execute Ansible tests.
+# It may also be useful for testing Ansible features while developing (but that's a hack...)
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+
+  tasks:
