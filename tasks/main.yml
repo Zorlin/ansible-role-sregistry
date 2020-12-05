@@ -11,6 +11,7 @@
   git:
     repo: https://github.com/singularityhub/sregistry
     dest: /opt/sregistry/
+    version: master
   when: not (sregistry_git_repo_state.stat.isdir is defined and sregistry_git_repo_state.stat.isdir)
 
 - name: Configure secrets
