@@ -29,3 +29,8 @@
     owner: root
     group: root
     mode: 0600
+
+- name: Bring our containers up
+  community.general.docker_compose:
+    project_src: /opt/sregistry
+    state: present
