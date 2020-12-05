@@ -21,3 +21,11 @@
     owner: root
     group: root
     mode: 0600
+
+- name: Configure main configuration
+  template:
+    src: config.py.j2
+    dest: /opt/sregistry/shub/settings/config.py
+    owner: root
+    group: root
+    mode: 0600

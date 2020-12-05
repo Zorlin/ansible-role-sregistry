@@ -11,11 +11,11 @@ with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # AUTHENTICATION
 
 # Which social auths do you want to use?
-ENABLE_GOOGLE_AUTH = False
-ENABLE_TWITTER_AUTH = False
-ENABLE_GITHUB_AUTH = True
-ENABLE_GITLAB_AUTH = False
-ENABLE_BITBUCKET_AUTH = False
+ENABLE_GOOGLE_AUTH = {{ sregistry_enable_google_auth }}
+ENABLE_TWITTER_AUTH = {{ sregistry_enable_twitter_auth }}
+ENABLE_GITHUB_AUTH = {{ sregistry_enable_github_auth }}
+ENABLE_GITLAB_AUTH = {{ sregistry_enable_gitlab_auth }}
+ENABLE_BITBUCKET_AUTH = {{ sregistry_enable_bitbucket_auth }}
 
 # NOTE you will need to set authentication methods up.
 # Configuration goes into secrets.py
