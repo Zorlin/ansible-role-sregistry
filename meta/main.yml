@@ -1,0 +1,14 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: sregistry
+  author: zorlin
+  description: "Install and configure Singularity Registry Server"
+  company: GetGlass.io
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: EL
+      versions:
+        - 7

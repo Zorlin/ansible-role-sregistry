@@ -1,0 +1,22 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  vars:
+    docker_install_compose: false
+    pip_install_packages:
+      - name: docker
+      - name: docker-compose
+
+  pre_tasks:
+    - include_tasks: environment-prep.yml
+
+  roles:
+    - role: geerlingguy.repo-epel
+      when: ansible_os_family == 'RedHat'
+    - geerlingguy.git
+    - geerlingguy.pip
+    - geerlingguy.ansible
+    - geerlingguy.docker
+    - zorlin.sregistry

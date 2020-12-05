@@ -1,0 +1,7 @@
+---
+- name: Converge (role only for rapid dev)
+  hosts: all
+  become: true
+
+  roles:
+    - zorlin.sregistry

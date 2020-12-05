@@ -1,0 +1,9 @@
+---
+- src: geerlingguy.repo-epel
+- src: geerlingguy.git
+- src: geerlingguy.ansible
+- src: geerlingguy.docker
+- src: geerlingguy.pip
+- name: zorlin.sregistry
+  src: https://github.com/Zorlin/ansible-role-sregistry
+  version: main
