@@ -142,9 +142,9 @@ VIEW_RATE_LIMIT_BLOCK = (
 # - pgp: deploy a key server alongside your registry
 
 PLUGINS_ENABLED = [
-    {% if sregistry_plugins_ldap_auth %}'ldap_auth'{% endif %}
-    {% if sregistry_plugins_globus %}'globus'{% endif %}
-    {% if sregistry_plugins_saml %}'saml'{% endif %}
+{% if sregistry_plugins_ldap_auth %}    'ldap_auth'{% endif %}
+{% if sregistry_plugins_globus %}    'globus'{% endif %}
+{% if sregistry_plugins_saml %}    'saml'{% endif %}
     #    'pgp'
     #    'ldap_auth',
     #    'google_build'
