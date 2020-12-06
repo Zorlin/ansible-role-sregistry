@@ -92,3 +92,4 @@ Actual playbooks are out of scope for now, but an "official" playbook repo shoul
 * Playbook to take down the Docker images for maintenance and bring up nginx
 * Playbook to generate certificates with Let's Encrypt (certbot certonly w/ nginx plugin)
 * Playbook to renew LE certificates
+* Add AWX compat via https://github.com/ansible/awx/issues/515
