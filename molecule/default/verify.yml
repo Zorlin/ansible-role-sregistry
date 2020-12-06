@@ -12,6 +12,10 @@
       register: test_python_version
       changed_when: false
 
+    - name: dump facts
+      setup:
+      register: test_facts
+
     - name: output requested information
       debug:
         msg:
