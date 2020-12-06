@@ -20,3 +20,5 @@
       debug:
         msg:
           - "python version is {{ test_python_version.stderr }}"
+          - "ansible python version is {{ ansible_python.version.major }}"
+          - "{{ ansible_python.version.major == 2 }}"
