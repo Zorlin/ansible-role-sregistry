@@ -15,4 +15,4 @@
     - name: output requested information
       debug:
         msg:
-          - "python version is {{ test_python_version.stdout }}"
+          - "python version is {{ test_python_version.stderr }}"
