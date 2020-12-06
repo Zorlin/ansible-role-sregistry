@@ -28,14 +28,7 @@ Available variables are listed below, along with default values (see `defaults/m
 
 ## Dependencies
 
-You will need docker-compose and the "docker" python library installed on your control machine.
-
-An easy way to install them is using pip3:
-
-```
-pip3 install docker
-pip3 install docker-compose
-```
+None.
 
 ## Example Playbook
 
@@ -92,4 +85,3 @@ Actual playbooks are out of scope for now, but an "official" playbook repo shoul
 * Playbook to take down the Docker images for maintenance and bring up nginx
 * Playbook to generate certificates with Let's Encrypt (certbot certonly w/ nginx plugin)
 * Playbook to renew LE certificates
-* Add AWX compat via https://github.com/ansible/awx/issues/515
