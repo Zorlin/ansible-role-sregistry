@@ -2,6 +2,14 @@
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
 
+- name: On python2 systems install needed Pip packages
+  pip:
+    name:
+      - docker
+      - docker-compose
+    state: present
+  when: ansible_python.version.major == '2'
+
 - name: Check if we have already cloned the Git repo
   stat:
     path: /opt/sregistry
