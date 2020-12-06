@@ -30,6 +30,11 @@
     group: root
     mode: 0600
 
+- name: Ensure nginx on the docker host is stopped
+  systemd:
+    name: nginx
+    state: stopped
+
 - name: Bring our containers up
   community.general.docker_compose:
     project_src: /opt/sregistry

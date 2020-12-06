@@ -8,6 +8,7 @@
     pip_install_packages:
       - name: docker
       - name: docker-compose
+    nginx_service_state: stopped
 
   pre_tasks:
     - include_tasks: environment-prep.yml
